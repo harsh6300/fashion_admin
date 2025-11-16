@@ -19,7 +19,7 @@ import Edit_SubCategory from './Pages/SubCategory/Edit_SubCategory';
 
 import Create_febric from './Pages/Febric/Create_fabric';
 import Edit_fabric from './Pages/Febric/Edit_Fabric';
-import Fabric from './Pages/Febric/febric';
+import Fabric from './Pages/Febric/Febric';
 import Bluk_import_Product from './Pages/Product/Bluk_import_product';
 
 import Profile from './Pages/User';
