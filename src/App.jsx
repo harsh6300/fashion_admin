@@ -17,7 +17,7 @@ import Sub_Category from './Pages/SubCategory/Sub_category';
 import Create_Subcategory from './Pages/SubCategory/Create_SubCategory';
 import Edit_SubCategory from './Pages/SubCategory/Edit_SubCategory';
 
-import Create_febric from './Pages/Febric/create_fabric';
+import Create_febric from './Pages/Febric/Create_fabric';
 import Edit_fabric from './Pages/Febric/Edit_Fabric';
 import Fabric from './Pages/Febric/febric';
 import Bluk_import_Product from './Pages/Product/Bluk_import_product';
