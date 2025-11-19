@@ -41,6 +41,7 @@ import Bill from './Pages/Bill/bill';
 import Create_bill from './Pages/Bill/Create_bill';
 import Edit_bill from './Pages/Bill/Edit_bill';
 
+import Order from './Pages/Order/order';
 // -----------------------------------
 
 
@@ -141,6 +142,7 @@ const App = () => {
         <Route path="/create_bill" element={<Create_bill />} />
         <Route path="/edit_bill" element={<Edit_bill />} />
 
+        <Route path="/order" element={<Order />} />
         {/* email:john@example.com */}
         {/* password:password123 */}
 

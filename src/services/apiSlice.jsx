@@ -1040,7 +1040,19 @@ export const apiSlice = createApi({
       }),
       invalidatesTags: ["Bill"],
     }),
+ getOrder: builder.query({
+      query: ({ room_id, date, status } = {}) => {
+        const params = new URLSearchParams();
 
+        if (room_id) params.append("room_id", room_id);
+        if (date) params.append("date", date);
+        if (status) params.append("status", status);
+
+        const queryString = params.toString();
+        return `view-order/${queryString ? `?${queryString}` : ""}`;
+      },
+      providesTags: ["Order"],
+    }),
 
 
   }),
@@ -1083,7 +1095,6 @@ export const {
   useEditFebricMutation,
   useDeleteFebricMutation,
 
-  useGetOrderQuery,
   useAddBulkProductMutation,
   useGetAddressQuery,
 
@@ -1191,6 +1202,7 @@ export const {
   useGetBillQuery,
   useEditBillMutation,
   useDeleteBillMutation,
-
+  
+  useGetOrderQuery,
 
 } = apiSlice;
