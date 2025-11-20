@@ -445,7 +445,7 @@ export const apiSlice = createApi({
         method: "POST",
         body: formData,
       }),
-      invalidatesTags: ["Inventories"],
+      invalidatesTags: ["Product"],
     }),
 
     editInventory: builder.mutation({
